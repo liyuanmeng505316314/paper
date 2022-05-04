@@ -1,0 +1,14 @@
+1、学习目的
+①广播的基本概念
+广播初始化 static void advertising_init(void) 函数
+根据需求配置广播间隔、广播的模式以及广播包含的数据，这称之为广播初始化
+广播初始化在配置好各项参数后，调用API sd_ble_gap_adv_set_configure()将配置传递给SoftDevice
+配置成功后会传递给库SoftDevice，完成后会返回    NRF_SUCCESS
+广播启动 static void advertising_start(void)
+②SDK实现广播的流程
+③广播的报文格式
+④广播报文可以含那些数据
+⑤数据的意义
+⑥如何将数据加入到广播中
+
+不少实验都是在3-3的基础上修改的，可以仔细对比不同的地方，然后找出精髓、来方便我们进行学习
